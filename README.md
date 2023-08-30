@@ -44,31 +44,35 @@ npm install
 
 1. **Create Tracking Plan**
    - Method: POST
-   - Endpoint: `/api/tracking-plans`
+   - Endpoint: `/tracking-plan/tracking-plans`
 
 2. **Create Event**
    - Method: POST
-   - Endpoint: `/api/events`
+   - Endpoint: `/event/create`
 
 3. **Associate Event with Tracking Plan**
    - Method: POST
-   - Endpoint: `/api/associate-event`
+   - Endpoint: `/tracking-plan//:tracking_plan_id/event`
 
 4. **Get Tracking Plan by ID**
    - Method: GET
-   - Endpoint: `/api/tracking-plans/:id`
+   - Endpoint: `/tracking-plan/get/:tracking_plan_id`
 
 5. **Get Event by ID**
    - Method: GET
-   - Endpoint: `/api/events/:id`
+   - Endpoint: `/event/:event_id`
 
 6. **Update Tracking Plan**
    - Method: PUT
-   - Endpoint: `/api/tracking-plans/:id`
+   - Endpoint: `/tracking-plan/update/:tracking_id`
 
 7. **Update Event**
    - Method: PUT
-   - Endpoint: `/api/events/:id`
+   - Endpoint: `/event/update/:event_id`
+
+8. **Get Tracking Plans**
+   - Method: GET
+   - Endpoint: `/tracking-plan/list`
 
 ## Frontend Components
 
